@@ -16,7 +16,7 @@ public class SingleTonClassic {
 	
 	//The private constructor.
 	private SingleTonClassic() {
-		
+		instanceCount++;
 	}
 	
 	//Factory method to get instance,
@@ -31,7 +31,6 @@ public class SingleTonClassic {
 				if(INSTANCE == null)
 				{
 					INSTANCE = new SingleTonClassic();
-					instanceCount++;
 				}
 			}
 		}
